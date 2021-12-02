@@ -1,134 +1,18 @@
-# "Examen. Proyecto de investigaciÛn final"
+# Consideraciones metodol√≥gicas relevantes
 
-# DescripciÛn general
+1-Las *variables de inter√©s* se definieron en funci√≥n de dos criterios generales: a) la orientaci√≥n te√≥rica aportada por la literatura previa revisada (v√©ase *Bibliograf√≠a*, doc. 02-an√°lisis) y b) las definiciones te√≥rico-metodol√≥gicas del INE, sobre todo respecto a la diferenciaci√≥n entre poblaci√≥n desempleada y poblaci√≥n fuera de la fuerza de trabajo (ver[Libro de C√≥digos - ENE 2021](https://ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/libro-de-codigos/libro-de-c%C3%B3digos-base-ene-2021.pdf?sfvrsn=54753851_35), p√°g. 52-53). La teor√≠a previa o literatura en el tema dice relaci√≥n con los aportes que han hecho Carrasco (2003) y Fraser (2016) en la l√≠nea de la sociolog√≠a del g√©nero para echar luz sobre la relaci√≥n existente entre la supeditaci√≥n de la mujer a las tareas de cuidado/reproductivas y su exclusi√≥n de la actividad econ√≥mica o tareas productivas remuneradas (i. e., de la fuerza de trabajo). El problema planteado por las autoras se pudo operacionalizar a trav√©s de la recodificaci√≥n de las variables e12 ("Motivo de no estar diponible para trabajar") y e9 ("Razones por las que no busca trabajo"") de la BDD original, dada la pertinencia de sus categor√≠as "Por motivos familiares permanentes" y/o "...temporales" (ambas de un alto n%, por lo dem√°s). 
 
-El **Proyecto de investigaciÛn final** es la instancia de evaluaciÛn **final e individual** del curso de An·lisis de Datos en R. Su objetivo es *evaluar los conocimientos y aprendizajes obtenidos en el curso de manera integra*. Para ello deber·n elaborar una investigaciÛn simple cuyo centro no est· en el contenido de la misma, sino en que sean capaces de mostrar sus habilidades para poder desarrollar sus proyectos de *an·lisis de datos* utilizando **R**
+En esta misma l√≠nea, se se√±ala que la *saturaci√≥n de categor√≠as* se realiz√≥ en funci√≥n de: a) los criterios anal√≠ticos contenidos en la literatura previa, y b) la revisi√≥n de las frecuencias porcentuales de cada categor√≠a de las variables de inter√©s en la BDD original. Por ejemplo, la categor√≠a "Por responsabilidades familiares permanentes (cuidado de ni√±os o personas dependientes)" correspondiente a la variable "Razones para no buscar empleo el √∫ltimo mes" posee un 23,24% de los casos v√°lidos en la BDD original. A su vez, esta categor√≠a posee una alta riqueza informativa para efectos de un an√°lisis desde la sociolog√≠a del g√©nero.
 
-## Datos
-
-Para ello pueden elegir uno de los siguientes datos (aquellos que tienen un asterisco pueden ser escogidos por dos estudiantes)
-
-**Instituciones y organizaciones gubernamentales**
-- Encuesta de Presupuestos Familiares
-- Encuesta Suplementaria de Ingresos
-- ICMO-IR
-- Encuesta CaracterizaciÛn Laboral (ENCLA) *
-- Encuesta Nacional de Empleo
-- Encuesta Bienestar Social *
-- Encuesta Nacional de Salud
-- Encuesta Financiera de Hogares
-- ENUSC
-- IV Encuesta de Violencia contra la Mujer en el ¡mbito de Violencia Intrafamiliar y en Otros Espacios (ENVIF-VCM)
-
-**Instituciones y organizaciones acadÈmicas**
-- ELSOC *
-- OHL *
-- Observatorio Conflictos
-- TermÛmetro Social
-- LatinobarÛmetro
-- MOVID-IMPACT  *
-- CEP (2019)
-
-Para todas las encuestas **deben elegir la ˙ltima versiÛn disponible**
-
-Una vez definidos sus datos, pueden inscribirse con estos hasta el viernes 12 de noviembre en el [siguiente link](https://docs.google.com/spreadsheets/d/1o_zXJVkQ9C7odalXsREdU2-pT8H5ETN0oKrBplQtJrk/edit?usp=sharing)
-
-## An·lisis
-
-Deben construir un reporte donde analicen alg˙n fenÛmeno que consideraran de interÈs y que puede ser abordado desde los datos que seleccionaron. Este reporte debe ser reproducible y coherente con el fenÛmeno que analizaran. Ahora bien, el centro no ser· evaluar su manejo en el tema, sino que su capacidad de poder presentar un an·lisis de datos de un fenÛmeno de interÈs utilizando herramientas b·sicas de R. 
-
-# DescripciÛn especÌfica
-
-En este apartado encontrar·n algunas de las instrucciones para su investigaciÛn.
-
-## Procesamiento (.R)
-
-1. La base final debe contener al menos 5 variables finales
-2. Las variables finales deben estar transformadas debidamente, incluyendo los casos perdidos.
-3. Poner atenciÛn a filtrar observaciones seg˙n el fenÛmeno que est·n analizando (si trabajar·n con un subset o con toda la data)
-
-## An·lisis (.Rmd)
-
-1. Estructura: TÌtulo, Abstract (100-150 palabras), IntroducciÛn (200-250 palabras), An·lisis (300-500 palabras), ConclusiÛn (150-200 palabras) y Referencias. Debe indicar su nombre, profesora y ayudantes
-  - El centro est· en que al leer este breve resumen de investigaciÛn, a la docente le quede claro que tipo de transformaciones deberÌan haber hecho a los datos, junto con quÈ an·lisis debieron reportar. Por ejemplo, si su investigaciÛn trata sobre el *"Impacto de la educaciÛn sobre los salarios* no tiene sentido que elijan unos datos que no tiene la variable educaciÛn y salarios, que ocupen la educaciÛn como una variable continua si sus hipÛtesis implica comparar grupos y/o que hagan un an·lisis descriptivo.
-  
-2. Deben escoger si hacer un an·lisis
-  
-  -  Poblacional (incluyendo elementos de la inferencia estadÌstica)
-  -  RegresiÛn lineal o logÌstica
-
-Para reportar estos an·lisis deben hacer al menos **2 tablas y 2 gr·ficos.** 
-
-3. Los an·lisis deben ocupar de alguna forma al menos las 5 variables procesadas.
-
-  - No siempre las utilizar·n para hacer una regresiÛn, quiz·s les sirve alguna de ellas para filtrar alg˙n grupo y comparar regresiones.
-  
-4. El archivo debe ser compilado a formato html o pdf.
-  
-## Proyecto
-
-1. [Deben crear un repositorio en el link de GitHub Class Room que se habilitar· el dÌa viernes 12 de noviembre]()
-2. Deben hacer un README.md explicando aspectos generales del repositorio
-
-# Criterios de evaluaciÛn
-
-## Condiciones de suficiencia
-
-En este apartado se indican aquellas condiciones que *en caso de **no cumplirse** se considerar· todo el resto del **examen no v·lido**. Esto permite corroborar aspectos b·sicos del curso por lo que se consideran como suficientes para aprobar este. Adem·s, permiten verificar que efectivamente hicieron el proyecto. 
-
-En caso de caer en alguna de las condiciones de suficiencia ser·n evaluados con la nota mÌnima (*1,0*). El examen solo puede ser entregado hasta la fecha estipulada.
-
-### Proyecto en general
-
-1. Existe un *Rproject*
-2. Se identifica un flujo de trabajo
-
-### Procesamiento
-
-1. Presenta un cÛdigo de proceso que se puede ejecutar integramente (no presenta problemas para llegar al resultado final de la base procesada). 
-
-2. La base original y final son distintas, es decir, que al menos se haya hecho un procesamiento en tÈrminos de **selecciÛn** y **transformaciÛn de variables**. 
-
-### An·lisis
-
-1. Existencia de un RMarkdown que haga uso de los datos procesados en el procesamiento. 
-
-2. Las im·genes y tablas deben ser creadas en este archivo. Si se necesitan cargar referencias a im·genes externas estas deben estar contenidas dentro de alguna de las carpetas del flujo de trabajo
-
-## Criterios de evaluaciÛn generales
-
-Adem·s de los criterios de suficiencia tome nota de los siguientes puntos
-
-1. Existencia de flujo de trabajo
-2. README.md permite presentar sus trabajos debidamente (debe contener sus nombres, profesora y ayudantes)
-3. CÛdigo de R y .Rmd sigue orden lÛgico y presentado en el curso
-4. Utiliza paquetes vistos en el curso. En caso de ocupar adicionales deben ser justificados en el README.md
-5. Cumplir lÌmite de palabras
-
-## Criterios adicionales (0,1 dÈcimas por cada uno)
-
-1. Colaborar ayudando a compaÒeros/as por el canal #examen
-2. CÛdigo ordenado y debidamente comentado
-3. Repositorio ordenado y debidamente documentado en README.md
-4. Archivo de .RMD a html o pdf tiene un tema especial
-5. Realiza an·lisis para alg˙n otro ramo, tesis o pr·ctica (debe indicarlo en el README.md)
-6. Hace fork a su examen final y lo deja en su repositorio final
-
-# Otros
-
-## Recursos
-
-1. No olvide revisar los recursos de la clase (pr·cticos, complementarios, talleres), pueden serles ˙til en esta etapa (sobre todo las primeras clases cuando les indicamos la importancia de la autonomÌa buscando soluciones)
-
-- [Pr·cticos](/example/)
-- [Tutoriales](/resource/install/)
-- [Material complementario y talleres](/resource/r-datatypes/)
+2-Los resultados obtenidos en cuanto a estimadores poblacionales se consideran metodol√≥gicamente adecuados (i. e., sin mayores fallos en el procesamiento) y satisfactorios, todo en cuanto presentan una variaci√≥n relativamente baja -casi nula- respecto a aquellos obtenidos por el INE para el mismo per√≠odo (ver [INE (2021). Bolet√≠n Estad√≠stico: Empleo Trimestral N¬∞276](https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/boletines/2021/pa%C3%ADs/bolet%C3%ADn-empleo-nacional-trimestre-m%C3%B3vil-julio-2021---agosto-2021---septiembre-2021.pdf)).
 
 
-## Horarios de consulta y trabajo conjunto (pronto)
+3-La alta proporci√≥n de NA en la variable e12 "*¬øPor qu√© motivo no estar√≠a disponible para trabajar?*", se debe a que la pregunta anterior en la encuesta original (e11 en *ENE-2021-08*) corresponde a: "*Si durante la semana pasada hubiera encontrado un trabajo, ¬øestar√≠a disponible para comenzar a trabajar de este lunes que viene al otro?*", a lo cual la poblaci√≥n fuera de la FT pero potencialmente activa -proporci√≥n mayoritaria de la poblaci√≥n fuera de la FT seg√∫n el INE- respondi√≥ "*S√≠*". Es por esto que la versi√≥n recodificada de e12 contenida en la BBD procesada (i. e., "motiv_nodis_trab"), al igual que la variable original, presenta una relativamente baja frecuencia de casos v√°lidos. 
 
-Dado que queda mucho para la entrega del examen y la idea es apoyarlas/os en este proceso, existir·n horarios de consulta colectivos y de trabajo. No se dar·n reuniones particulares, solo en casos excepcionales
+4-Se aplic√≥ el filtro para excluir a personas menores de 15 a√±os en consideraci√≥n de que estas no se encuentran en edad de trabajar bajo ninguna cirscunstancia √©tica ni legal, mientras que los/as j√≥venes mayores de 15 a√±os fueron incluidos bajo el criterio de que se encuentran habilitados para trabajar, siempre teniendo en consideraci√≥n la *normativa de protecci√≥n de los/as ni√±os, ni√±as y adolescentes en el mundo del trabajo* que dicta la ley N¬∞21,271 (ver [link](https://www.bcn.cl/leychile/navegar?idNorma=1150357)) en los Art√≠culos 13 y 14 del C√≥digo del Trabajo. Por lo dem√°s, el INE contabiliza a dicha poblaci√≥n en sus c√°lculos de la TP, la TO y la TS (ver [link](https://ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/libro-de-codigos/libro-de-c%C3%B3digos-base-ene-2021.pdf?sfvrsn=54753851_35), p√°g. 41).
 
+5-La recodificaci√≥n de la variable *edad* (*edad_tramo* en la BDD procesada) se llev√≥ a cabo en virtud de las categor√≠as utilizadas por el INE en el CENSO 2017 (ver [link](https://www.ine.cl/ine-ciudadano/definiciones-estadisticas/poblacion/caracteristicas-de-la-poblacion)).
 
-**Los repositorios de esta evaluaciÛn final quedar·n disponibles para el futuro**
- 
+6-Las variables correspondientes a ids, strata y weights en la creaci√≥n de la BDD procesada como *objeto encuesta* fueron seleccionadas a partir tanto del dise√±o muestral establecido por el INE (2021) en su *Documento Metodol√≥gico Encuesta Nacional de Empleo (ENE) 2020* (ver [link](https://ine.cl/docs/default-source/ocupacion-y-desocupacion/metodologia/espanol/metodolog%C3%ADa-encuesta-nacional-de-empleo-ene-2020.pdf?sfvrsn=793380e9_8), p√°gs. 32-48), como de las recomendaciones contenidas en el *Libro de C√≥digos ENE 2021* (ver [link](https://ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/libro-de-codigos/libro-de-c%C3%B3digos-base-ene-2021.pdf?sfvrsn=54753851_35), p√°g. 9).
+
+7-Finalmente, cabe se√±alar que la mini-investigaci√≥n desarrollada cumplir√° con una utilidad acad√©mica adicional a la estipulada por el Programa: har√° de fuente para la Ponencia final del autor en la c√°tedra de Sociolog√≠a del G√©nero (por supuesto, los puntos relativos al Marco Conceptual, Metodolog√≠a, etc. -que s√≠ forman parte de la Ponencia- han sido excluidos del RMarkdown *03-analisis*, ya que no fueron solicitados).
